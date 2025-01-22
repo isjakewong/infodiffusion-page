@@ -665,6 +665,7 @@
         th, td {
             border: 1px solid black;
             padding: 8px;
+            font-size: 10px; /* 缩小字体 */
         }
         th {
             background-color: transparent;
@@ -684,14 +685,14 @@
 <body>
     <table>
         <thead>
-            <tr style="border-top: 3px solid black;"> <!-- 第一行加粗顶部边框 -->
+            <tr style="border-top: 3px solid black;">
                 <th></th>
-                <th colspan="2" >FashionMNIST</th>
-                <th colspan="2" >CIFAR-10</th>
-                <th colspan="2" >FFHQ</th>
-                <tr style="border-bottom: 2px solid black;"> <!-- 第二行加粗底部边框 -->
+                <th colspan="2">FashionMNIST</th>
+                <th colspan="2">CIFAR-10</th>
+                <th colspan="2">FFHQ</th>
+                <tr style="border-bottom: 2px solid black;">
             </tr></tr>
-            <tr style="border-bottom: 2px solid black;"> <!-- 第二行加粗底部边框 -->
+            <tr style="border-bottom: 2px solid black;">
                 <th></th>
                 <th>Latent Qual. ↑</th>
                 <th>FID ↓</th>
@@ -700,7 +701,7 @@
                 <th>Latent Qual. ↑</th>
                 <th>FID ↓</th>
             </tr>
-            <tr style="border-bottom: 2px solid black;"></tr> <!-- 第三行加粗底部边框 -->
+            <tr style="border-bottom: 2px solid black;"></tr>
         </thead>
         <tbody>
           <tr>
@@ -773,6 +774,7 @@
 </body>
 </html>
 
+
   <p style="text-align:center;">Table 4. Disentanglement and latent quality metrics and FID. For 3DShapes, we check the image quality manually and label the models
     which generate high-quality images with check marks (‘Image Qual.’).
     For CelebA, ‘Attrs.’ counts the number of “captured” attributes when calculating the TAD score. ‘Latent Quality’ is measured as AUROC
@@ -793,6 +795,7 @@
         th, td {
             border: 1px solid black;
             padding: 8px;
+            font-size: 12px; /* 缩小字体 */
         }
         th {
             background-color: transparent;
@@ -925,6 +928,7 @@
 </body>
 </html>
 
+
   <p style="text-align:center;">Table 5. Representation learning comparison to contrastive meth-
     ods. ‘Gen.’ indicates whether the model has generative capabilities.
     ‘Dim.’ denotes the latent dimension. Disentanglement is measured
@@ -944,9 +948,10 @@
           text-align: center;
       }
       th, td {
-          border: 1px solid black;
-          padding: 8px;
-      }
+            border: 1px solid black;
+            padding: 8px;
+            font-size: 12px; /* 缩小字体 */
+        }
       th {
           background-color: transparent; /* Removes the shadow */
       }
@@ -1398,84 +1403,38 @@
 <!-- Citation -->
 </section>
 <!-- paper code video -->
-<div class="container">
-  <div class="columns is-centered">
-    <div class="column is-4">
-      <div class="content">
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
-         .container {
-             display: flex;
-             flex-direction: column; 
-             gap: 5px; 
-         }
- 
-         .row {
-             display: flex;
-             align-items: center;
-             gap: 18px; 
-         }
- 
-         .image-item img {
-             width: 90px; 
-             height: auto; 
-             cursor: pointer;
-         }
- 
-         .text-item a {
-             text-decoration: none;
-             color: #007bff;
-             font-size: 16px;
-         }
- 
-         .text-item a:hover {
-             text-decoration: underline;
-         }
-     </style>
- </head>
- <body>
-     <div class="container">
-         <!-- 图片行 -->
-         <div class="row">
-             <div class="image-item">
-                 <a href="https://arxiv.org/abs/2306.08757" target="_blank">
-                     <img src="./static/images/paper.png" alt="Paper">
-                 </a>
-             </div>
-             <div class="image-item">
-                 <a href="https://github.com/isjakewong/InfoDiffusion" target="_blank">
-                     <img src="./static/images/code.png" alt="Code">
-                 </a>
-             </div>
-             <div class="image-item">
-                 <a href="https://slideslive.com/39003793/infodiffusion-representation-learning-using-information-maximizing-diffusion-models?ref=search-presentations-InfoDiffusion%3A+Representation+Learning+Using+Information+Maximizing+Diffusion+Models" target="_blank">
-                     <img src="./static/images/video.png" alt="Video">
-                 </a>
-             </div>
-         </div></div></div></div></div>
-         <!-- 文字行 -->
-         <div class="row">
-             <div class="text-item">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <a href="https://arxiv.org/abs/2306.08757" target="_blank">Paper</a>
-             </div>
-             <div class="text-item">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <a href="https://github.com/isjakewong/InfoDiffusion" target="_blank">Code</a>
-             </div>
-             <div class="text-item">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <a href="https://slideslive.com/39003793/infodiffusion-representation-learning-using-information-maximizing-diffusion-models?ref=search-presentations-InfoDiffusion%3A+Representation+Learning+Using+Information+Maximizing+Diffusion+Models" target="_blank">Video(5min.)</a>
-             </div>
-         </div>
-     </div>
-    
- </body>
- </html>
+<section class="hero">
+  <div class="sec-body">
+    <div class="container is-size-5" style="text-align: center; display: flex; justify-content: center">
+      <div class="columns" style="width: 450px;">
+        <div class="column ">
+          <a href="https://arxiv.org/abs/2306.08757" target="_blank">
+            <div>
+              <img src="./static/images/paper.png" width="110px" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </div>
+            Paper
+          </a>
+        </div>
+        <div class="column ">
+          <a href="https://github.com/isjakewong/InfoDiffusion" target="_blank">
+            <div>
+              <img src="./static/images/code.png" width="90px" style="margin-top: 30px; margin-bottom: 22px;">
+            </div>
+            Code
+          </a>
+        </div>
+        <div class="column ">
+          <a href="https://slideslive.com/39003793/infodiffusion-representation-learning-using-information-maximizing-diffusion-models?ref=search-presentations-InfoDiffusion%3A+Representation+Learning+Using+Information+Maximizing+Diffusion+Models" target="_blank">
+            <div>
+              <img src="./static/images/video.png" width="90px" style="margin-top: 30px; margin-bottom: 22px;">
+            </div>
+            Video (5 min.)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
  <!--/ paper code video -->
 
 <footer class="footer">
